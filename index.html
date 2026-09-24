@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#050302">
+<title>MADHAV by GTM CAFE — Katihar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600;1,700&display=swap" rel="stylesheet">
+<style>
+:root{--g:#e8b84b;--g2:#ffe49a;--bg:#050302;--panel:#120a05;--text:#fff7e5;--muted:#b9ac99}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{background:var(--bg);color:var(--text);font-family:"DM Sans",sans-serif;overflow-x:hidden}
+body:after{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 50% 0,rgba(232,184,75,.10),transparent 30%),linear-gradient(90deg,rgba(255,190,60,.025),transparent 20%,transparent 80%,rgba(255,190,60,.025));z-index:-1}
+a{text-decoration:none;color:inherit}
+header{position:fixed;z-index:99;top:0;width:100%;background:rgba(3,2,1,.68);backdrop-filter:blur(18px);border-bottom:1px solid rgba(232,184,75,.24)}
+.nav{height:72px;max-width:1320px;margin:auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between}
+.logo{font:800 22px Cinzel,serif;letter-spacing:2px;color:var(--g2);text-shadow:0 0 22px rgba(232,184,75,.22)}.logo small{display:block;text-align:center;font:600 7px "DM Sans";letter-spacing:5px;color:white}
+nav{display:flex;align-items:center;gap:24px;font-size:12px;font-weight:700;letter-spacing:.7px}nav a{opacity:.9}nav a:hover{color:var(--g2)}
+.navbtn{border:1px solid var(--g);padding:9px 15px;border-radius:22px;color:var(--g2)}
+.hero{min-height:100vh;padding:88px 12px 28px;display:flex;align-items:center;justify-content:center;background:#040302}
+.hero-box{width:min(1540px,100%);position:relative}
+.hero img{display:block;width:100%;max-height:77vh;object-fit:cover;border:1px solid #9d6d1e;border-radius:14px;box-shadow:0 0 0 4px #100803,0 35px 100px #000,0 0 80px rgba(232,184,75,.12)}
+.hero-copy{text-align:center;margin-top:19px}.hero-copy .script{font:italic 600 22px "Playfair Display";color:var(--cream)}
+.hero-copy .script b{color:var(--g2)}.actions{margin-top:8px}
+.btn{display:inline-flex;align-items:center;gap:7px;padding:12px 19px;margin:5px;border-radius:6px;font-size:12px;font-weight:800;transition:.25s}.gold{color:#180e03;background:linear-gradient(135deg,#9c6513,#ffe28a,#ad7119);box-shadow:0 10px 35px rgba(232,184,75,.16)}.outline{border:1px solid #9e711f;background:#0d0703;color:var(--g2)}.btn:hover{transform:translateY(-3px);filter:brightness(1.07)}
+.ticker{border-top:1px solid rgba(232,184,75,.2);border-bottom:1px solid rgba(232,184,75,.2);overflow:hidden;white-space:nowrap;background:#0c0603}.ticker div{display:inline-block;padding:12px 0;animation:move 20s linear infinite;color:#d4c3a7;font-size:11px;font-weight:700;letter-spacing:3px}.ticker span{color:var(--g);padding:0 25px}@keyframes move{to{transform:translateX(-50%)}}
+.section{max-width:1320px;margin:auto;padding:100px 24px}.eyebrow{text-align:center;color:var(--g);font-size:10px;font-weight:800;letter-spacing:5px}.heading{text-align:center}.heading h2{font:700 clamp(32px,5vw,54px) Cinzel,serif;color:var(--text);margin:7px 0}.heading p{color:var(--muted);font-size:14px;max-width:650px;margin:auto}
+.about{display:grid;grid-template-columns:1.2fr .8fr;gap:22px;margin-top:42px}.card{background:linear-gradient(145deg,#211108,#0b0603);border:1px solid rgba(232,184,75,.28);border-radius:17px;padding:34px;box-shadow:inset 0 0 45px rgba(232,184,75,.025),0 20px 60px #0008}.card h3{font:600 29px "Playfair Display";color:var(--g2);margin-bottom:12px}.card p{color:#c9bdad;line-height:1.9;font-size:14px}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-top:16px}.feature{text-align:center;padding:21px 10px;border:1px solid #4c3415;background:#0d0703;border-radius:12px}.feature strong{display:block;color:var(--g2);font-size:11px}.feature span{font-size:10px;color:#938979}
+.menu{margin-top:42px;border-radius:16px;padding:8px;background:linear-gradient(135deg,#53360f,#e5b64b,#5b3a10);box-shadow:0 25px 80px #000b}.menu img{display:block;width:100%;border-radius:9px}
+.gallery{display:grid;grid-template-columns:1.35fr .65fr;gap:17px;margin-top:42px}.pic{background:#0b0603;border:1px solid #6c4a17;padding:7px;border-radius:14px;overflow:hidden}.pic img{width:100%;height:100%;display:block;object-fit:cover;border-radius:8px}.pic.tall{max-height:900px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:42px}.line{margin:14px 0;color:#ddd;font-size:14px}.line b{color:var(--g2)}.links{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}.pill{border:1px solid #674818;border-radius:22px;padding:9px 13px;font-size:11px;color:var(--g2)}
+footer{text-align:center;border-top:1px solid #34220f;padding:30px 20px;color:#817768;font-size:11px}
+.float{position:fixed;right:17px;bottom:17px;z-index:120;background:#25d366;color:#06150a;border-radius:30px;padding:13px 18px;font-weight:800;box-shadow:0 12px 35px #000}
+@media(max-width:800px){nav{display:none}.nav{height:62px}.hero{padding-top:74px}.hero img{max-height:none}.about,.contact,.gallery{grid-template-columns:1fr}.features{grid-template-columns:1fr}.section{padding:72px 15px}.card{padding:25px}.pic.tall{max-height:none}}
+</style>
+</head>
+<body>
+<header><div class="nav">
+<a class="logo" href="#home">MADHAV<small>BY GTM CAFE</small></a>
+<nav><a href="#home">HOME</a><a href="#about">ABOUT</a><a href="#menu">MENU</a><a href="#gallery">GALLERY</a><a href="#contact">CONTACT</a><a class="navbtn" href="https://wa.me/919155642421" target="_blank">WHATSAPP</a></nav>
+</div></header>
+
+<section class="hero" id="home"><div class="hero-box">
+<img src="hero.jpg" alt="MADHAV by GTM CAFE">
+<div class="hero-copy"><div class="script">Good Food <b>•</b> Good Mood <b>•</b> Great Life</div>
+<div class="actions"><a class="btn gold" href="#menu">VIEW MENU</a><a class="btn outline" href="https://wa.me/919155642421" target="_blank">💬 WHATSAPP US</a></div></div>
+</div></section>
+
+<div class="ticker"><div>FRESH INGREDIENTS <span>✦</span> HYGIENIC KITCHEN <span>✦</span> GREAT TASTE <span>✦</span> MADE WITH LOVE <span>✦</span> 100% PURE VEG <span>✦</span> FRESH INGREDIENTS <span>✦</span> HYGIENIC KITCHEN <span>✦</span> GREAT TASTE <span>✦</span> MADE WITH LOVE <span>✦</span> 100% PURE VEG</div></div>
+
+<section class="section" id="about"><div class="heading"><div class="eyebrow">WELCOME TO MADHAV</div><h2>A Taste You'll Remember</h2><p>A premium café experience in the heart of Mirchaibari, Katihar.</p></div>
+<div class="about"><div class="card"><h3>Made for Good Moments</h3><p>MADHAV by GTM CAFE is your place for refreshing drinks, delicious food and memorable time with friends and family. From creamy cold coffee and crispy snacks to chai and satisfying meals — there is something for every mood.</p><div class="features"><div class="feature"><strong>100% PURE VEG</strong><span>Pure taste</span></div><div class="feature"><strong>FRESH</strong><span>Quality ingredients</span></div><div class="feature"><strong>GREAT TASTE</strong><span>Made with love</span></div></div></div>
+<div class="card"><h3>Find Us</h3><p>Ward No. 04, Near City Cart Mall, Mirchaibari, Katihar, Bihar – 854105.</p><div class="actions"><a class="btn gold" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Ward+No+04+Near+City+Cart+Mall+Mirchaibari+Katihar+Bihar+854105">📍 DIRECTIONS</a></div></div></div>
+</section>
+
+<section class="section" id="menu"><div class="heading"><div class="eyebrow">TASTE • SIP • ENJOY</div><h2>Our Special Menu</h2><p>Cold Coffee • Momos • Burger • Fries • Fry Rice • Tea • Coffee & more</p></div><div class="menu"><img src="menu.jpg" alt="MADHAV by GTM CAFE menu"></div></section>
+
+<section class="section" id="gallery"><div class="heading"><div class="eyebrow">MADHAV MOMENTS</div><h2>Gallery</h2></div><div class="gallery"><div class="pic"><img src="brand.jpg" alt="MADHAV by GTM CAFE banner"></div><div class="pic tall"><img src="poster.jpg" alt="MADHAV by GTM CAFE poster"></div></div></section>
+
+<section class="section" id="contact"><div class="heading"><div class="eyebrow">LET'S CONNECT</div><h2>Visit MADHAV</h2></div><div class="contact">
+<div class="card"><h3>Contact Us</h3><div class="line"><b>☎ Phone:</b> <a href="tel:924169258">924169258</a></div><div class="line"><b>💬 WhatsApp:</b> <a href="https://wa.me/919155642421" target="_blank">+91 91556 42421</a></div><div class="line"><b>◎ Instagram:</b> <a href="https://www.instagram.com/madhav.by.gtm/" target="_blank">@madhav.by.gtm</a></div><div class="links"><a class="pill" href="https://wa.me/919155642421" target="_blank">CHAT ON WHATSAPP</a><a class="pill" href="https://www.instagram.com/madhav.by.gtm/" target="_blank">OPEN INSTAGRAM</a></div></div>
+<div class="card"><h3>Store Address</h3><p>Ward No. 04, Near City Cart Mall,<br>Mirchaibari, Katihar,<br>Bihar – 854105</p><div class="actions"><a class="btn gold" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Ward+No+04+Near+City+Cart+Mall+Mirchaibari+Katihar+Bihar+854105">📍 OPEN GOOGLE MAPS</a></div></div>
+</div></section>
+
+<a class="float" href="https://wa.me/919155642421" target="_blank">💬 WhatsApp</a>
+<footer>© 2026 MADHAV by GTM CAFE • Katihar, Bihar</footer>
+</body></html>
